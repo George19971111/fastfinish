@@ -18,7 +18,7 @@ class Blogpage extends Component{
                 window.scrollTo(0,0);
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + localStorage.getItem("cool-jwt");
-              axios.get("http://localhost:1338/api/categories")
+              axios.get("/api/categories")
               .then(response=>{
                   this.setState({
                       elementskateg:response.data
@@ -41,7 +41,7 @@ class Blogpage extends Component{
             let h210201 = document.createElement('button');
             h210201.innerHTML="Все статьи тематики";
             h210201.classList.add("hookfor_our_posts_for_link");
-            axios.post("http://localhost:1338/api/posts",{sub_cat_name:this.state.elementskateg[e.target.id].subcategory[i].name, cat_name:this.state.elementskateg[e.target.id].name})
+            axios.post("/api/posts",{sub_cat_name:this.state.elementskateg[e.target.id].subcategory[i].name, cat_name:this.state.elementskateg[e.target.id].name})
             .then(response=>{
                
                for(let i =0; i<response.data.length; i++){
