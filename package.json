@@ -1,7 +1,7 @@
 {
   "name": "freestyle",
   "version": "0.1.0",
-  "proxy": "http://localhost:1338",
+  "proxy": "http://5.23.49.245:1338",
   "private": true,
   "dependencies": {
     "app-root-path": "^2.2.1",
