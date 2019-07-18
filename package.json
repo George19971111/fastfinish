@@ -8,7 +8,9 @@
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
+    "browserslist": "^4.6.6",
     "compression": "^1.7.4",
+    "core-js": "^3.1.4",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^8.0.0",
@@ -25,6 +27,7 @@
     "path": "^0.12.7",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
@@ -45,6 +48,8 @@
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^1.19.1",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-middleware": "^3.7.0",
@@ -61,15 +66,22 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "defaults": [
+      "last 2 versions",
+      "Safari >= 10",
+      "iOS >= 10",
+      "not ie <= 10",
+      "> 1%"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "evergreen": [
+      "last 2 Chrome versions",
+      "last 2 ChromeAndroid versions",
+      "last 2 Firefox versions",
+      "last 2 FirefoxAndroid versions",
+      "last 2 Safari versions",
+      "last 2 iOS versions",
+      "last 2 Edge versions",
+      "last 2 Opera versions"
     ]
   }
 }

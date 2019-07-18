@@ -1,11 +1,13 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require("path");
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
+
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -14,6 +16,17 @@ module.exports = {
     publicPath: '/',
     filename: "[name].js"
   }, // NEW Ends
+  optimization: {
+    minimizer: [
+    new TerserPlugin( {
+      terserOptions: {
+        safari10: true,
+        // You can compute this too if you really have to.
+        ie8: false,
+      },
+    } ),
+  ],
+  },
   plugins: [htmlPlugin],
   devServer: {
   contentBase: path.resolve(__dirname), // New
@@ -23,10 +36,25 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        test: /\.js$/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            presets: [
+            ["@babel/preset-env",{
+              modules:false,
+              'targets': {
+                'browsers': [
+                  "last 2 versions",
+                  "Safari >= 10",
+                  "iOS >= 10",
+                  "not ie <= 10",
+                  "> 1%"
+
+                ]
+              }
+            }]]
+          }
         }
       },
       {
