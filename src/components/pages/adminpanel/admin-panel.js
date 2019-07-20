@@ -26,7 +26,7 @@ class AdminPanel extends Component {
     axios.defaults.headers.common["Authorization"] =
       "Bearer " + localStorage.getItem("cool-jwt");
     axios
-      .post("http://localhost:1338/api/posts")
+      .post("http://5.23.49.245:1338/api/posts")
       .then(response => {
         console.log(response);
         for (let i = 0; i <= response.data.length; i++) {
@@ -60,7 +60,7 @@ class AdminPanel extends Component {
             console.log(e.target.parentNode.id);
             if (window.confirm("Действительно удалить?")) {
               axios
-                .post("http://localhost:1338/api/delete", {
+                .post("http://5.23.49.245:1338/api/delete", {
                   id: e.target.parentNode.id
                 })
                 .then(response => {});

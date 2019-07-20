@@ -23,7 +23,7 @@ class Contactns extends Component{
       butonforsendcustomer(e){
         document.getElementById('truesught_gem').value = "";
         document.getElementById('truesught_gem1').value = "";
-        axios.post("http://localhost:1338/api/sendmail",{number:this.state.phonenumbercustomer,name:this.state.namecustomer})
+        axios.post("http://5.23.49.245:1338/api/sendmail",{number:this.state.phonenumbercustomer,name:this.state.namecustomer})
         .then(response=>{
             console.log(response.data)
            alert('Ожидайте звонка')

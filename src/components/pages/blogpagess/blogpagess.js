@@ -13,7 +13,7 @@ class Blogpagess extends Component{
       "Bearer " + localStorage.getItem("cool-jwt");
     // eslint-disable-next-line
       axios
-        .post("http://localhost:1338/api/post", { id: params.postID })
+        .post("http://5.23.49.245:1338/api/post", { id: params.postID })
         .then(response => {
           if (response.data[0] == null) {
             this.props.history.push("/");

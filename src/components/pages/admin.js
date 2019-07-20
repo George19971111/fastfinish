@@ -14,7 +14,7 @@ class Admin extends Component{
     }
     onsubmitbutton(event){
         event.preventDefault();
-        axios.post("http://localhost:1338/api/login",this.state)
+        axios.post("http://5.23.49.245:1338/api/login",this.state)
         .then(responce=>{
             localStorage.setItem('cool-jwt',responce.data.token)
             if(responce.data.success){

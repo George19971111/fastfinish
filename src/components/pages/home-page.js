@@ -6,6 +6,7 @@ import F1lorence3 from './img/F1lorence3.png';
 import F2lorence3 from './img/F2lorence3.png';
 import F3lorence3 from './img/F3lorence3.png';
 import Frees from './video/Frees.mp4';
+import Frees21 from './video/Frees21.ogg';
 import Kuhna from './img/Kuhna.png';
 import Line1 from './img/Line1.png';
 import Ellips1e from './img/Ellips1e.png';
@@ -67,8 +68,9 @@ class HomePage extends Component{
             <main>
 
                 <section className="aside_forp_xte1_fathervid">
-                <video className="aside_forp_xte1_videos1" controls>
+                <video autoplay className="aside_forp_xte1_videos1" controls>
                         <source src={Frees} type="video/mp4"/>
+                        <source src={Frees21} type="video/ogg"/>
                 </video>
                 <div className="firth3teg_in_homepage2">
                 <h3>ИЗГОТОВЛЕНИЕ ДИЗАЙНЕРСКОЙ МЕБЕЛИ</h3>

@@ -15,7 +15,7 @@ class Aboutus extends Component{
             <div id="matroskin_kot_onas" className="blog_1112main_content1221"></div>
                 <div className="flex_blox_for_abousu">
                     <div className="flex_blox_for_abousu_vidos">
-                        <video className="flex_blox_for_abousu_vidos1" controls>
+                        <video autoplay className="flex_blox_for_abousu_vidos1" controls >
                         <source src={Frees1} type="video/mp4"/>
                         </video>
                         

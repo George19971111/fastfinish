@@ -28,7 +28,7 @@ class Category extends Component {
   selectcat(e) {
     var id = document.getElementById("cat_select").value;
     axios
-      .post("http://localhost:1338/api/category", { name: id })
+      .post("http://5.23.49.245:1338/api/category", { name: id })
       .then(response => {
         var cat_div = document.getElementById("cat_div_content");
         cat_div.innerHTML = "";
@@ -44,7 +44,7 @@ class Category extends Component {
         button.addEventListener("click", e => {
           console.log(e.target.parentNode.id);
           axios
-            .post("http://localhost:1338/api/deletecategory", {
+            .post("http://5.23.49.245:1338/api/deletecategory", {
               id: e.target.parentNode.id
             })
             .then(response => {
@@ -66,7 +66,7 @@ class Category extends Component {
             var cat_name = document.getElementById("upd_cat_name").value;
             var desc = document.getElementById("upd_cat_desc").value;
             axios
-              .post("http://localhost:1338/api/updatecategory", {
+              .post("http://5.23.49.245:1338/api/updatecategory", {
                 id: div_info.parentNode.id,
                 name: cat_name,
                 description: desc
@@ -90,7 +90,7 @@ class Category extends Component {
           var desc = document.getElementById("new_subcat_desc").value;
           var cat_name = document.getElementById("cat_select").value;
           axios
-            .post("http://localhost:1338/api/addsubcategory", {
+            .post("http://5.23.49.245:1338/api/addsubcategory", {
               cat_name: cat_name,
               name: name,
               description: desc
@@ -130,7 +130,7 @@ class Category extends Component {
       button.addEventListener("click", e => {
         var cat_name = document.getElementById("cat_select").value;
         axios
-          .post("http://localhost:1338/api/deletesubcategory", {
+          .post("http://5.23.49.245:1338/api/deletesubcategory", {
             cat_name: cat_name,
             name: li.id
           })
@@ -169,14 +169,14 @@ class Category extends Component {
       description: this.state.new_discription
     };
     axios
-      .post("http://localhost:1338/api/addcategory", jsonPost)
+      .post("http://5.23.49.245:1338/api/addcategory", jsonPost)
       .then(response => {
         this.refresh_sel();
       });
   }
 
   refresh_sel() {
-    axios.get("http://localhost:1338/api/categories").then(response => {
+    axios.get("http://5.23.49.245:1338/api/categories").then(response => {
       var select = this.create_select(response.data);
       select.id = "cat_select";
       document.getElementById("cat_select_content").innerHTML = "";

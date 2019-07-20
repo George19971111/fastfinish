@@ -41,7 +41,7 @@ class Constructor extends Component {
       this.refresh_sel();
     } else {
       axios
-        .post("http://localhost:1338/api/post", { id: params.postID })
+        .post("http://5.23.49.245:1338/api/post", { id: params.postID })
         .then(response => {
           this.refresh_sel(response.data[0].category);
           this.create_sub_select(
@@ -50,7 +50,7 @@ class Constructor extends Component {
           );
           console.log(response.data[0].main_foto)
           let img = document.createElement("img");
-          img.src = "http://localhost:1338/" +response.data[0].main_foto;
+          img.src = "http://5.23.49.245:1338/" +response.data[0].main_foto;
           img.classList.add('mainfoto')
           this.setState({
             main_foto: response.data[0].main_foto
@@ -206,7 +206,7 @@ class Constructor extends Component {
     let formdata = new FormData();
     formdata.append("file", file);
     axios({
-      url: "http://localhost:1338/api/upload",
+      url: "http://5.23.49.245:1338/api/upload",
       method: "POST",
       headers: {
         authorization: "your token"
@@ -214,7 +214,7 @@ class Constructor extends Component {
       data: formdata
     }).then(response => {
       let imagges = document.createElement("img");
-      imagges.src = "http://localhost:1338/" + response.data.path;
+      imagges.src = "http://5.23.49.245:1338/" + response.data.path;
       this.addimgforchange(imagges);
     });
   }
@@ -362,7 +362,7 @@ class Constructor extends Component {
     if (this.state.changee) {
       jsonPost.id = this.props.match.params.postID;
       axios
-        .post("http://localhost:1338/api/update", jsonPost)
+        .post("http://5.23.49.245:1338/api/update", jsonPost)
         .then(response => {
           console.log(response);
           if (
@@ -383,7 +383,7 @@ class Constructor extends Component {
         });
     } else {
       axios
-        .post("http://localhost:1338/api/addpost", jsonPost)
+        .post("http://5.23.49.245:1338/api/addpost", jsonPost)
         .then(response => {
           console.log(response);
           if (
@@ -526,7 +526,7 @@ class Constructor extends Component {
     });
   }
   refresh_sel(cat, sub) {
-    axios.get("http://localhost:1338/api/categories").then(response => {
+    axios.get("http://5.23.49.245:1338/api/categories").then(response => {
       var select = this.create_select(response.data, cat);
       select.id = "cat_select";
       this.setState({
@@ -568,7 +568,7 @@ class Constructor extends Component {
   }
 
   create_sub_select(cat, subcat) {
-    axios.get("http://localhost:1338/api/categories").then(response => {
+    axios.get("http://5.23.49.245:1338/api/categories").then(response => {
       for (var i = 0; i < response.data.length; i++) {
         if (response.data[i].name == cat) {
           var select = this.create_select(response.data[i].subcategory, subcat);
@@ -591,12 +591,12 @@ class Constructor extends Component {
     let formdata = new FormData();
     formdata.append("file", file);
     axios({
-      url: "http://localhost:1338/api/upload",
+      url: "http://5.23.49.245:1338/api/upload",
       method: "POST",
       data: formdata
     }).then(response => {
       let imagges = document.createElement("img");
-      imagges.src = "http://localhost:1338/" + response.data.path;
+      imagges.src = "http://5.23.49.245:1338/" + response.data.path;
       imagges.classList.add('mainfoto')
       this.setState({
         main_foto: response.data.path

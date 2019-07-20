@@ -18,7 +18,7 @@ class Blogpage extends Component{
                 window.scrollTo(0,0);
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + localStorage.getItem("cool-jwt");
-              axios.get("http://localhost:1338/api/categories")
+              axios.get("http://5.23.49.245:1338/api/categories")
               .then(response=>{
                   this.setState({
                       elementskateg:response.data
@@ -41,7 +41,7 @@ class Blogpage extends Component{
             let h210201 = document.createElement('button');
             h210201.innerHTML="Все статьи тематики";
             h210201.classList.add("hookfor_our_posts_for_link");
-            axios.post("http://localhost:1338/api/posts",{sub_cat_name:this.state.elementskateg[e.target.id].subcategory[i].name, cat_name:this.state.elementskateg[e.target.id].name})
+            axios.post("http://5.23.49.245:1338/api/posts",{sub_cat_name:this.state.elementskateg[e.target.id].subcategory[i].name, cat_name:this.state.elementskateg[e.target.id].name})
             .then(response=>{
                
                for(let i =0; i<response.data.length; i++){
@@ -56,7 +56,7 @@ class Blogpage extends Component{
                    h3001.classList.add("hookfor_our_posts_discr");
                    h2001.innerHTML=response.data[i].title;
                    h3001.innerHTML=response.data[i].description;
-                   imgg001.src = "http://localhost:1338/"+response.data[i].main_foto;
+                   imgg001.src = "http://5.23.49.245:1338/"+response.data[i].main_foto;
                     divchik001.id =response.data[i]._id;
                    divchik001.appendChild(imgg001);
                    divchik001.appendChild(h2001);
