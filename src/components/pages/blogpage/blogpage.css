@@ -149,12 +149,7 @@ color: #000000;
         margin:35px auto 0px auto;
     }
 }
-@media(max-width:1250px){
-    .blog_main_content{
-        height:auto;
-        padding-bottom:40px;
-    }
-}
+
 @media(max-width:768px){
     .classfor_subtitle_for_sucat button{
         max-width: 100%;
