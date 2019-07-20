@@ -151,8 +151,7 @@ color: #000000;
 }
 @media(max-width:1250px){
     .blog_main_content{
-        height:auto;
-        padding-bottom:40px;
+        height:512px;
     }
 }
 @media(max-width:768px){
