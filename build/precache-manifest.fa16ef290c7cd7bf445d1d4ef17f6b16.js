@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5ec1b1a656125da5a24465a5e7e6f1a",
+    "revision": "a93d3be8254cfd9658da71cc5c2e94e1",
     "url": "/index.html"
   },
   {
-    "revision": "faf39864b42fb018c584",
-    "url": "/static/css/main.278be298.chunk.css"
+    "revision": "00dbfa6d7292f967cde6",
+    "url": "/static/css/main.43c3db8a.chunk.css"
   },
   {
-    "revision": "095c91c3b4765f6f7eda",
-    "url": "/static/js/2.4d4676f7.chunk.js"
+    "revision": "32ba7ed7ac69893eb1d9",
+    "url": "/static/js/2.8ab88330.chunk.js"
   },
   {
-    "revision": "faf39864b42fb018c584",
-    "url": "/static/js/main.7ad6698a.chunk.js"
+    "revision": "00dbfa6d7292f967cde6",
+    "url": "/static/js/main.37654eca.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -118,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b4db3019838e3c43a3ce7def6992bc0b",
     "url": "/static/media/Posterforv.b4db3019.png"
+  },
+  {
+    "revision": "4840d790af325effbfa2c28a294047ac",
+    "url": "/static/media/Postersecond.4840d790.png"
   },
   {
     "revision": "926a08fb27e3303c7452b0bdd2d5e5ab",
