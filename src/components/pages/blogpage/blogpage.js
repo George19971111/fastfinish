@@ -91,8 +91,11 @@ class Blogpage extends Component{
             <Header/>
             <div>
         <div className="blog_main_content">
-                <h1 className="wordtext_h1_one">Блог о мебели и дизайне</h1>
-                <h2 className="wordtext_h2_one">Полезные советы и рекомендации по выбору мебели, новости и статьи<br className="dudte1"/> для всех, кто делает ремонт или увлекается дизайном интерьера</h2>
+               
+        </div>
+        <div>
+        <h1 className="wordtext_h1_one">Блог о мебели и дизайне</h1>
+        <h2 className="wordtext_h2_one">Полезные советы и рекомендации по выбору мебели, новости и статьи<br className="dudte1"/> для всех, кто делает ремонт или увлекается дизайном интерьера</h2>
         </div>
        <main>
             

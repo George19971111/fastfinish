@@ -7,35 +7,31 @@
 }
 .wordtext_h1_one{
     text-align: center;
-    color:white;
+    color:black;
     font-size:45px;
     font-family: "TTNorms-Bold";
-    padding-top:455px;
+    padding-top:60px;
     line-height: 53px;
 }
 .wordtext_h2_one{
     font-size:30px;
     line-height: 35px;
     text-align: center;
-    color: #FFFFFF;
+    color: black;
     font-family: "TTNorms-Regular";
-    padding-top:76px;
+    padding-top:36px;
 }
-
-
 .classfor_ullu{
     width:1400px;
     max-width: 100%;
     height: auto;
-    margin:46px auto 0px auto;
-    
+    margin:110px auto 0px auto;   
 }
 .classfor_ullu ul{
     display: flex;
     justify-content: flex-start;
     flex-wrap:wrap;
     margin:0 auto;
-   
 }
 .fotofirstlive li{
     margin:0 auto;
@@ -88,9 +84,7 @@ font-family: "TTNorms-Medium";
 line-height: 41px;
    font-family: "TTNorms-Regular";
    cursor: pointer;
-
 color: #000000;
-
 }
 #div_for_subcategory{
     width:1590px;
@@ -205,7 +199,7 @@ line-height: 12px;
       
     }
     .classfor_ullu{
-        margin:19px auto 0px auto;
+        margin:40px auto 0px auto;
     }
     .afterclick_button_class1{
         width: 173px;
@@ -229,12 +223,12 @@ line-height: 12px;
     .wordtext_h1_one{
         font-size:35px;
         line-height: 41px;
-        padding-top:180px;
+        padding-top:40px;
     }
     .wordtext_h2_one{
         font-size:20px;
         line-height: 24px;
-        padding-top:52px;
+        padding-top:22px;
     }
 }
 @media(max-width:414px){
@@ -305,7 +299,7 @@ line-height: 12px;
     .wordtext_h1_one{
         font-size:25px;
         line-height: 30px;
-        padding-top:80px;
+        padding-top:20px;
     }
     .wordtext_h2_one{
         font-size:15px;
@@ -313,7 +307,7 @@ line-height: 12px;
         width:330px;
         max-width: 100%;
         margin:0 auto;
-        padding-top:30px;
+        padding-top:20px;
         
     }
     .dudte1{

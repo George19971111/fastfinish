@@ -1,8 +1,11 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import './headertop.css';
-import Logo from './img/Logo.png';
+import Lnterfase from './img/Lnterfase.png';
+import Search from './img/Search.png';
 import Menuphone from './img/Menuphone.png';
+import Close from './img/Close.png';
+
 class Header extends Component {
     constructor(props){
         super(props)
@@ -11,95 +14,52 @@ class Header extends Component {
         }
     }
     componentDidMount() {
-        window.addEventListener("resize", ()=>{
-            document.getElementById('hodor_holdthedoor1').classList.add("hodor_holdthedoor")
-        });
-          
-        window.addEventListener('scroll', ()=>{
-            this.setState({
-                lastScrollY: window.scrollY})
-                if(this.state.lastScrollY>18){
-                    document.getElementById('main_contetn_header').classList.add('add_class_fro_scroll1');
-                    document.getElementById('main_contetn_header2').classList.add('add_class_fro_scroll2');
-                    document.getElementById('main_contetn_header3').classList.add('add_class_fro_scroll3');
-                    document.getElementById('main_contetn_header4').classList.add('add_class_fro_scroll4');
-                    document.getElementById('main_contetn_header5').classList.add('add_class_fro_scroll5');
-                }
-                else{
-                    document.getElementById('main_contetn_header').classList.remove('add_class_fro_scroll1');
-                    document.getElementById('main_contetn_header2').classList.remove('add_class_fro_scroll2');
-                    document.getElementById('main_contetn_header3').classList.remove('add_class_fro_scroll3');
-                    document.getElementById('main_contetn_header4').classList.remove('add_class_fro_scroll4');
-                    document.getElementById('main_contetn_header5').classList.remove('add_class_fro_scroll5');
-                }
-        })
+      
       }
-      setmenuburgermak(e){
-          if(document.getElementById('hodor_holdthedoor1').classList.contains('hodor_holdthedoor31')){
-            document.getElementById('hodor_holdthedoor1').classList.remove("hodor_holdthedoor31")
-            document.getElementById('hodor_holdthedoor1').classList.add('hodor_holdthedoor')
-          }
-          else{
+      finbutburger(e){
+          document.getElementById('yellowcardmusic1').classList.add('pos1122absltor_me1122nutop');
+          document.getElementById('omg_close_foricon1').classList.add('roooflerrrodlroooflerrrodl');
+          document.getElementById('omg_close_foricon111').classList.add('invis_for_norwistnwidt');
+          document.getElementById('yellowcardmusic1').classList.remove('pos1122absltor_me1s2122nutop2s');
 
-        
-        document.getElementById('hodor_holdthedoor1').classList.remove('hodor_holdthedoor')
-        document.getElementById('hodor_holdthedoor1').classList.add("hodor_holdthedoor31")  }
+      }
+      finbutburgercloser(e){
+        document.getElementById('omg_close_foricon111').classList.remove('invis_for_norwistnwidt');
+        document.getElementById('omg_close_foricon1').classList.remove('roooflerrrodlroooflerrrodl');
+        document.getElementById('yellowcardmusic1').classList.remove('pos1122absltor_me1122nutop')
+        document.getElementById('yellowcardmusic1').classList.add('pos1122absltor_me1s2122nutop2s');
       }
     render(){
     return(
-        <header id="main_contetn_header" className="header_top_for_all">
-            <div id="main_contetn_header0" className="header_top_for_all111">
-            <div id="main_contetn_header3" className="link_hiden_logo_phone"><Link to="/"><h1>freestyle studio</h1></Link></div>
-             <Link id="main_contetn_header2" to="/"><div className="div_img_logo"><img src={Logo} alt=""/></div></Link>  
-             <nav className="navigation_menu_out">
-                 <ul id="main_contetn_header4"  className="nav_link_divul">
-                     <li>
-                         <Link to = "/">
-                            главная
-                         </Link>
-                     </li>
-                     <li className="margin-left_one_zise">
-                         <Link to = "/blog">
-                             блог
-                         </Link>
-                     </li>
-                     <li className="margin-left_one_zise">
-                     <Link to = "/aboutus">
-                             о нас
-                         </Link>
-                     </li>
-                     <li className="margin-left_one_zise">
-                     <Link to = "/contact">
-                            контакты
-                         </Link>
-                     </li>
-                 </ul>
-             </nav>
-             
-             <div className="div_button_for_callbeck" id="main_contetn_header5"><a className="telefon_nubmer" href="tel:+77056722266"><button>+7 705 672 22 66</button></a></div>
-             <div className="disp_menu_for_phone" onClick={(e)=>{this.setmenuburgermak(e)}}><img src={Menuphone} alt=""/></div>  
-             </div>
-             <div id="hodor_holdthedoor1" className="hodor_holdthedoor">
-             <nav className="hodor_holdthedoor13">
+        <header id="" className="header_top_for_all">
+           <div className="header_top_for_div_out">
+                <div className="button_burger_meni_fe" ><img id="omg_close_foricon111" onClick={(e)=>{this.finbutburger(e)}} src={Menuphone} alt=""/><img id="omg_close_foricon1"  className="roooflerrrodl" onClick={(e)=>{this.finbutburgercloser(e)}} src={Close}/></div>
+               
+                <div className="header_top_for_div_text1"><h1><Link to='/'>freestyle studio</Link></h1></div>
+                <div className="for_searcher_header"><div className="for_searcher_header_onbe"><Link to='/contact'><img src={Lnterfase} alt=""/></Link></div><div><img src={Search} alt=""/></div></div> 
+           </div>
+           <div id="yellowcardmusic1" className="posabsltor_menutop">
+            
+             <nav className="dddlll_llooeel">
                  <ul id=""  className="">
                      <li>
                          <Link to = "/">
-                            главная
+                            Главная
                          </Link>
                      </li>
                      <li className="">
                          <Link to = "/blog">
-                             блог
+                             Блог
                          </Link>
                      </li>
                      <li className="">
                      <Link to = "/aboutus">
-                             о нас
+                             О нас
                          </Link>
                      </li>
                      <li className="">
                      <Link to = "/contact">
-                            контакты
+                            Контакты
                          </Link>
                      </li>
                  </ul>

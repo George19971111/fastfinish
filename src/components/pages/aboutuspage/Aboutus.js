@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './Aboutus.css';
 import {Link} from 'react-router-dom';
-// import Frees1 from './video/Frees1.mp4';
+import Frees1 from './video/Frees1.mp4';
 import Linnia from './img/Linnia.png';
 class Aboutus extends Component{
     

@@ -15,7 +15,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage }).single("file");
 
 module.exports.getPosts = async function(req, res) { 
-  if (req.user) { 
+
   logger.info(req.body); 
   if (req.body.cat_name) { 
   Post.find({ 
@@ -27,12 +27,6 @@ module.exports.getPosts = async function(req, res) {
   } else { 
   Post.find({}).exec(function(err, post) { 
   res.status(200).json(post); 
-  }); 
-  } 
-  } else { 
-  return res.status(401).json({ 
-  success: false, 
-  message: "Token is not valid" 
   }); 
   } 
   };
@@ -101,11 +95,10 @@ module.exports.deletePost = function(req, res) {
 
 module.exports.upload = function(req, res) {
   upload(req, res, function(err) {
-    console.log(req.body, req.file);
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err);
     } else if (err) {
-      console.log(err);
+      logger.error(err);
       return res.status(500).json(err);
     }
     return res.status(200).send(req.file);

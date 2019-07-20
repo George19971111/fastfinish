@@ -3,16 +3,11 @@ const logger = require("../../config/logger");
 var Category = mongoose.model("Category");
 
 module.exports.getCategories = async function(req, res) {
-  if (req.user) {
+
     Category.find().exec(function(err, post) {
       res.status(200).json(post);
     });
-  } else {
-    return res.json({
-      success: false,
-      message: "Token is not valid"
-    });
-  }
+
 };
 
 module.exports.addCategory = async function(req, res) {
