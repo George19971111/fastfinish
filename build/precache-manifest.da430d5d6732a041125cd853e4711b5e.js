@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "521b3921d38f9ea1b0c245bad4aad807",
+    "revision": "995e223daa853e853e3155791e788a5c",
     "url": "/index.html"
   },
   {
-    "revision": "e8971504c5a9f7859acc",
+    "revision": "8d6f273f5f0bc5f2eeb5",
     "url": "/static/css/main.43c3db8a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8ab88330.chunk.js"
   },
   {
-    "revision": "e8971504c5a9f7859acc",
-    "url": "/static/js/main.f9f59cd6.chunk.js"
+    "revision": "8d6f273f5f0bc5f2eeb5",
+    "url": "/static/js/main.45e264c1.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Phonename.da7243b1.png"
   },
   {
-    "revision": "b4db3019838e3c43a3ce7def6992bc0b",
-    "url": "/static/media/Posterforv.b4db3019.png"
+    "revision": "09a4b2958f83f9b4a0e21f87388ab306",
+    "url": "/static/media/Posterforv.09a4b295.png"
   },
   {
-    "revision": "4840d790af325effbfa2c28a294047ac",
-    "url": "/static/media/Postersecond.4840d790.png"
+    "revision": "bd64ecf5e052cdff7c88b831678f360a",
+    "url": "/static/media/Postersecond.bd64ecf5.png"
   },
   {
     "revision": "926a08fb27e3303c7452b0bdd2d5e5ab",
