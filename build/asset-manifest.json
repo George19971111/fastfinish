@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e966566.chunk.css",
+    "main.css": "/static/css/main.3c38457e.chunk.css",
     "main.js": "/static/js/main.45e264c1.chunk.js",
     "main.js.map": "/static/js/main.45e264c1.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.8ab88330.chunk.js": "/static/js/2.8ab88330.chunk.js",
     "static/js/2.8ab88330.chunk.js.map": "/static/js/2.8ab88330.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.117265583af28b8a9d84bda5c6ebe835.js": "/precache-manifest.117265583af28b8a9d84bda5c6ebe835.js",
+    "precache-manifest.d82317a65818bfd640f7ccd5d5af9c37.js": "/precache-manifest.d82317a65818bfd640f7ccd5d5af9c37.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4e966566.chunk.css.map": "/static/css/main.4e966566.chunk.css.map",
+    "static/css/main.3c38457e.chunk.css.map": "/static/css/main.3c38457e.chunk.css.map",
     "static/media/admin.css": "/static/media/BebasNeueRegular.85b13a3b.ttf",
     "static/media/blogpage.css": "/static/media/phoneimg.04d61084.png",
     "static/media/app.css": "/static/media/TTNorms-Regular.eb6edc39.ttf",
