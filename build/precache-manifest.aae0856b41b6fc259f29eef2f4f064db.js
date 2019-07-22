@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3818d9bc34ecb800a7430275ac712cdf",
+    "revision": "034374b2961defda46295c6710ce08b6",
     "url": "/index.html"
   },
   {
-    "revision": "b62a1fb4f31a2eaca7bf",
-    "url": "/static/css/main.f46f6646.chunk.css"
+    "revision": "c3c3f39699dc05549f4c",
+    "url": "/static/css/main.71b1dbe2.chunk.css"
   },
   {
     "revision": "32ba7ed7ac69893eb1d9",
     "url": "/static/js/2.8ab88330.chunk.js"
   },
   {
-    "revision": "b62a1fb4f31a2eaca7bf",
-    "url": "/static/js/main.4879c983.chunk.js"
+    "revision": "c3c3f39699dc05549f4c",
+    "url": "/static/js/main.6cf02c99.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6b28c5938d1e4c3f29ef00f27b021303",
     "url": "/static/media/Circe-Regular.6b28c593.ttf"
-  },
-  {
-    "revision": "84acf3b1aa009025f7781d021dce9268",
-    "url": "/static/media/Desskttop.84acf3b1.png"
   },
   {
     "revision": "3d373a63026d49451ecd08b27c3596d1",
