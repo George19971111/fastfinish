@@ -18,6 +18,8 @@ class Blogpagess extends Component{
           if (response.data[0] == null) {
             this.props.history.push("/");
           } else {
+            document.getElementById('for_artical_bloger_open12221').style.background = "url(http://5.23.49.245:1338/"+response.data[0].main_foto+") center center no-repeat";
+            document.getElementById('for_artical_bloger_open12221').style.backgroundSize = "cover";
             let discription_div = document.createElement("div");
             let div_for_article = document.createElement("div");
             let div_title = document.createElement("div");
@@ -42,7 +44,7 @@ class Blogpagess extends Component{
         return(
             <React.Fragment>
             <Header/>
-            <div className="for_artical_bloger_open">
+            <div id="for_artical_bloger_open12221" className="for_artical_bloger_open">
      <h1  id="fortune_fortune_tutle" className="bloh_page_h1_one"></h1>
                <h2 id="fortune_fortune_discrue" className="bloh_page_h2_one"></h2>
    </div>

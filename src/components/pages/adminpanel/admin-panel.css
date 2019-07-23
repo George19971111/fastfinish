@@ -12,6 +12,13 @@
     text-align: justify;
 
 }
+.div_ochen pre{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word
+}
 .class_imgaes{
     width:100px;
     height: auto;;
@@ -50,6 +57,14 @@
 .Game_of_throne{
   margin-top:40px;
 }
+.Game_of_throne pre{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
 .text_for_catalog{
     font-size: 50px;
     font-family: "BebasNeueBold";
@@ -78,19 +93,26 @@
     text-align: center
 }
 #testdata{
-    width: 1359px;
+    width: 85%;
     max-width: 100%;
     margin:0 auto;
     font-family: "TTNorms-Regular";
 }   
-#testdata p{
+#testdata pre{
     font-family: "TTNorms-Regular";
     text-align: justify;
     padding-bottom:20px;
+
+}
+#testdata div img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
 }
 .pooor_body_mainclass{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 31px;
     color: #000000;
     font-family: "TTNorms-Regular";
 }
@@ -101,7 +123,7 @@
             line-height: 24px;
     }
     #testdata{
-        width: 710px;
+        width: 85%;
         max-width: 100%;
         height:auto;
     }
