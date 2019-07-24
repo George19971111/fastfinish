@@ -18,12 +18,13 @@ class Blogpagess extends Component{
           if (response.data[0] == null) {
             this.props.history.push("/");
           } else {
-            document.getElementById('for_artical_bloger_open12221').style.background = "url(http://5.23.49.245:1338/"+response.data[0].main_foto+") center center no-repeat";
-            document.getElementById('for_artical_bloger_open12221').style.backgroundSize = "cover";
             let discription_div = document.createElement("div");
+
             let div_for_article = document.createElement("div");
             let div_title = document.createElement("div");
             div_title.classList.add("add_div_title");
+            document.getElementById('fo1r_arti1cal_bl1ger_opendodoree').style.background="url(http://5.23.49.245:1338/"+response.data[0].main_foto+")center center no-repeat";
+            document.getElementById('fo1r_arti1cal_bl1ger_opendodoree').style.backgroundSize="cover"
             discription_div.innerHTML = response.data[0].description;
             discription_div.classList.add("add_div_disc_rip");
             div_title.innerHTML = response.data[0].title;
@@ -44,7 +45,7 @@ class Blogpagess extends Component{
         return(
             <React.Fragment>
             <Header/>
-            <div id="for_artical_bloger_open12221" className="for_artical_bloger_open">
+            <div id="fo1r_arti1cal_bl1ger_opendodoree" className="for_artical_bloger_open">
      <h1  id="fortune_fortune_tutle" className="bloh_page_h1_one"></h1>
                <h2 id="fortune_fortune_discrue" className="bloh_page_h2_one"></h2>
    </div>

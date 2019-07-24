@@ -1,10 +1,12 @@
 
 @font-face{
     font-family: "BebasNeueRegular";
+    font-display: auto;
     src:url("../../fonts/BebasNeueRegular.ttf")
 }
 @font-face{
     font-family: "BebasNeueBold";
+    font-display: auto;
     src:url("../../fonts/BebasNeueBold.ttf")
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 

@@ -15,15 +15,14 @@ class Blogpage extends Component{
         }
     }
     componentDidMount(){
-                window.scrollTo(0,0);
-          axios.defaults.headers.common["Authorization"] =
-            "Bearer " + localStorage.getItem("cool-jwt");
+          window.scrollTo(0,0);
+        //   axios.defaults.headers.common["Authorization"] =
+        //     "Bearer " + localStorage.getItem("cool-jwt");
               axios.get("http://5.23.49.245:1338/api/categories")
               .then(response=>{
                   this.setState({
                       elementskateg:response.data
                   })
-                  console.log(this.state.elementskateg)
                   let kirkland =  document.getElementsByName('1');
                      $(kirkland).click()
        

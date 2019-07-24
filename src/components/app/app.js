@@ -11,7 +11,9 @@ import Contactns from '../pages/contactfrees';
 import Category from '../pages/category';
 import Blogpagess from '../pages/blogpagess';
 import './app.css';
+
 const App = ()=>{
+
     return (
         <React.Fragment>
         <Switch>

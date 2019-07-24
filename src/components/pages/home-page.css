@@ -137,19 +137,6 @@
     line-height: 19px;
     color: #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home_page_h1_one{
     text-align: center;
     color:white;
@@ -267,35 +254,30 @@ color: #000000;
     font-family: "TTNorms-Bold";
 }
 .flex_div_kuhnia_homepage{
-    width:1280px;
+    width:1380px;
     max-width: 100%;
     height: auto;
     display: flex;
     justify-content: flex-start;
-    margin-right:auto;
-    margin-left:68px;
-    margin-top:82px;
-  
+    margin:82px auto 0px auto;
 }
 .roof_for_last_one_rei19{
-    width:1280px;
+    width:1380px;
     max-width: 100%;
     height: auto;
     display: flex;
     justify-content: flex-start;
     margin-right:auto;
-    margin-left:68px;
-    margin-top:30px;
+    margin:30px auto 0px auto;
 }
 .flex_div_kuhnia_homepage1{
-    width:1280px;
+    width:1380px;
     max-width: 100%;
     height: auto;
     display: flex;
     justify-content: flex-start;
     margin-left:auto;
-    margin-right:220px;
-    margin-top:30px;
+    margin:30px auto 0px auto;
 }
 .flex_div_kuhnia_immg img{
     display: block;
@@ -350,19 +332,19 @@ color: #000000;
     width: 317px;
     max-width: 100%;
     height: auto;
-    margin-top:25px;
+    margin:25px auto 0px auto;
 }
 .fixedlasonepropblecm{
     width: 317px;
     max-width: 100%;
     height: auto;
-    margin-top:225px;
+    margin:225px auto 0px auto;
 }
 .right_to_left_div_hole{
     width: 317px;
     max-width: 100%;
     height: auto;
-    margin-top:200px;
+    margin:200px auto 0px auto;
    
 }
 .flex_div_kuhniah22221 h3{
@@ -495,6 +477,9 @@ padding-bottom:47px;
     }
 }
 @media(max-width:956px){
+    .flex_for_divani_matraci{
+        margin:25px auto 0px auto;
+    }
     .wrapper{
         height:650px
     }
@@ -502,7 +487,9 @@ padding-bottom:47px;
     
 }
 @media(max-width:768px){
-   
+    .flex_for_divani_matraci{
+        margin:15px auto 0px auto;
+    }
     .slider{
         width:100%;
         max-width: 100%;
@@ -660,8 +647,7 @@ padding-bottom:47px;
         line-height: 35px;
     }
     .home_page_css_back{
-        background:url("./img/Ipadamain.png") center center no-repeat;
-        background-size: cover; 
+     
         height:512px;
     }
     .aside_forline_text{
@@ -735,7 +721,10 @@ margin-top:23px;
         height:490px;
     }
 }
-@media(max-width:415px){
+@media(max-width:414px){
+    .flex_for_divani_matraci{
+        margin:-10px auto 0px auto;
+    }
     .slider{
         width:100%;
         max-width: 100%;
@@ -919,8 +908,7 @@ color: #000000;
         line-height: 30px;
     }
     .home_page_css_back{
-        background:url("./img/Phonename.png") center center no-repeat;
-        background-size: cover; 
+    
         height:286px;
         padding-top:50px;
     }

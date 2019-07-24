@@ -10,14 +10,14 @@
     margin:40px auto 0px auto;
     height:auto;
     text-align: justify;
-
+ 
 }
 .div_ochen pre{
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;   
 }
 .class_imgaes{
     width:100px;
@@ -56,13 +56,14 @@
 }
 .Game_of_throne{
   margin-top:40px;
+  margin-bottom:40px;
 }
 .Game_of_throne pre{
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;   
     text-align: justify;
 }
 .text_for_catalog{
@@ -93,26 +94,26 @@
     text-align: center
 }
 #testdata{
-    width: 85%;
+    width: 75%;
     max-width: 100%;
     margin:0 auto;
     font-family: "TTNorms-Regular";
-}   
-#testdata pre{
+}  
+#testdata div img{
+    display:block;
+    max-width: 100%;
+    height:auto;
+    margin:0 auto;
+    margin-bottom:15px;
+}
+#testdata p{
     font-family: "TTNorms-Regular";
     text-align: justify;
     padding-bottom:20px;
-
-}
-#testdata div img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 15px;
 }
 .pooor_body_mainclass{
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 25px;
+    line-height: 30px;
     color: #000000;
     font-family: "TTNorms-Regular";
 }
@@ -123,7 +124,7 @@
             line-height: 24px;
     }
     #testdata{
-        width: 85%;
+        width: 710px;
         max-width: 100%;
         height:auto;
     }

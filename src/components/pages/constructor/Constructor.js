@@ -78,7 +78,7 @@ class Constructor extends Component {
                 this.addimgforchange(child.childNodes[0]);
               }
               // eslint-disable-next-line
-              if (child.tagName == "P") {
+              if (child.tagName == "PRE") {
                 if (child.classList.contains("class_fonts_italica")) {
                   document.getElementById("a_2").click();
                 } else if (child.classList.contains("class_fonts_bold")) {
@@ -249,7 +249,7 @@ class Constructor extends Component {
     button_change.classList.add("Remove_button");
     button_ontop.classList.add("Remove_button");
     button_onbottom.classList.add("Remove_button");
-    let article = document.createElement("p");
+    let article = document.createElement("pre");
     let classicallost = document.getElementById("text_aria").classList;
     article.classList = classicallost;
     article.id = this.state.id;
